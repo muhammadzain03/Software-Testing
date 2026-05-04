@@ -1,0 +1,269 @@
+{
+  "id": "d5d36fcc-1f49-498d-abce-2c7a569b3381",
+  "version": "2.0",
+  "name": "WalmartTests",
+  "url": "https://www.walmart.ca",
+  "tests": [{
+    "id": "c7d2c8e3-4516-4ce6-bbf9-63b29fdee740",
+    "name": "searchProduct_validKeyword",
+    "commands": [{
+      "id": "7d141670-05a6-4201-8855-726a2dd91695",
+      "comment": "",
+      "command": "open",
+      "target": "/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "332bfcf4-c799-4fdb-927d-5f950d41a582",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1710x1073",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a267a8e-05b2-472c-b981-acbb5301822d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7658404-b59d-4574-8496-8b77b9497f65",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.querySelector('input[name=\"q\"]').value='laptop'; document.querySelector('form[role=\"search\"]').submit();",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a34d64f-a8f3-4b81-8eaf-94accde5d809",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "laptop | Walmart Canada",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e467c4ad-ecda-4b06-a5c4-ce3b22eb762c",
+    "name": "searchProduct_differentKeyword",
+    "commands": [{
+      "id": "6bc2dc56-fad0-4853-87a4-abebf52df5fa",
+      "comment": "",
+      "command": "open",
+      "target": "/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4f89b21-0a22-4334-922b-af45618f7c39",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1710x1073",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60d5e46e-26f6-4bb0-b438-9ba450b67dea",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2807ee28-bef0-4b6a-ad3b-7e3afe26660d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.querySelector('input[name=\"q\"]').value='phone'; document.querySelector('form[role=\"search\"]').submit();",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcb56ab7-626b-4e42-86e5-b50ddea8682f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "phone | Walmart Canada",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9296c3a1-6a12-41d1-84dc-1bc3c398649f",
+    "name": "navigateToDepartment_electronics",
+    "commands": [{
+      "id": "f33a8906-5a8c-4ae0-be49-a1a1033a96af",
+      "comment": "",
+      "command": "open",
+      "target": "/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de8a7f4b-e662-4e12-837f-e484d29c24e9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1710x1073",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a7cd41e-5da4-4604-8d2b-08d190e387b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Electronics",
+      "targets": [
+        ["linkText=Electronics", "linkText"],
+        ["css=li:nth-child(8) .no-underline", "css:finder"],
+        ["xpath=//a[contains(text(),'Electronics')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/span/div/div/section/nav/ul/li[8]/section/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.walmart.ca/en/cp/electronics/10003?icid=home_page_electronics_electronics_d_128758_G9N9AJG9L2')]", "xpath:href"],
+        ["xpath=//li[8]/section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Electronics')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b35dc4a-de3f-4653-9b41-be36805a753d",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Electronics Store | Walmart Canada",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7a3e8b25-7a78-45ea-b07a-03bb0fc14e86",
+    "name": "navigateToDepartment_grocery",
+    "commands": [{
+      "id": "b3a997bb-4404-4dc5-94d3-21bc3d5e5fb2",
+      "comment": "",
+      "command": "open",
+      "target": "/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "687305a5-8182-43b6-9e86-f42e63962bc6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1710x1073",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0e3ea5a-c3ac-42b4-b7ac-d7974f1852fd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=linkcard-Shop-AdjustableCardCarousel-contentZone11",
+      "targets": [
+        ["id=linkcard-Shop-AdjustableCardCarousel-contentZone11", "id"],
+        ["css=.flex:nth-child(1) > .card-wrapper #linkcard-Shop-AdjustableCardCarousel-contentZone11", "css:finder"],
+        ["xpath=//a[@id='linkcard-Shop-AdjustableCardCarousel-contentZone11']", "xpath:attributes"],
+        ["xpath=//main[@id='maincontentredesign']/div/div[2]/div/div[2]/div/div/div/div/div/div/ul/li/div/div/section/section/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.walmart.ca/en/shop/rollbacks-and-more/6000205319047?icid=home_page_other_rollbacks_n_more_patio_d_176690_RXEX8F5TBX')])[2]", "xpath:href"],
+        ["xpath=//section/section/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdffdd22-7df7-4c29-9763-8229f4d31357",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Grocery",
+      "targets": [
+        ["linkText=Grocery", "linkText"],
+        ["css=li:nth-child(2) .sub-nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Grocery')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/span/div/div/section/nav/ul/li[2]/section/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.walmart.ca/en/cp/grocery/10019?icid=home_page_grocery_grocery_d_128750_UIQ8379D3Q')]", "xpath:href"],
+        ["xpath=//li[2]/section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Grocery')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2614ca63-b38a-4311-bac3-413ff1b21588",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Walmart Grocery Store: Order Groceries Online for Delivery or Pickup",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "162aa99a-293d-4469-91da-c8fe294ee612",
+    "name": "navigateToDepartment_springFashion",
+    "commands": [{
+      "id": "72771a0c-5e04-4d0a-9b60-896671440c4c",
+      "comment": "",
+      "command": "open",
+      "target": "/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db22959c-cdc6-4a77-833f-449d65e4fdc0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1710x1073",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e45c3448-00ba-49d8-b94d-d710a0918f8e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Spring Fashion",
+      "targets": [
+        ["linkText=Spring Fashion", "linkText"],
+        ["css=li:nth-child(6) .no-underline", "css:finder"],
+        ["xpath=//a[contains(text(),'Spring Fashion')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/span/div/div/section/nav/ul/li[6]/section/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.walmart.ca/en/shop/inspired-by-social/6000199749624?icid=home_page_clothing_shoes_and_accessories_spring_fashion_d_174929_Q9EEXNZJRO')]", "xpath:href"],
+        ["xpath=//li[6]/section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Spring Fashion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e3fe092-96e2-4d68-bc42-a1a732f2a9ca",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Clothing Inspired by Social | Walmart Canada",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "aae8d06c-799d-4df8-9414-45287b033c41",
+    "name": "navigateToDepartment_outdoor",
+    "commands": [{
+      "id": "0c9ee2ca-6f13-41fc-8839-a2cf0c6d7f6e",
+      "comment": "",
+      "command": "open",
+      "target": "/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2880c3b7-8e52-4e00-85fc-0ad1a2c2d63c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1710x1073",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "509d37f2-5890-4fe7-809e-baaa930af8f3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Outdoor Living",
+      "targets": [
+        ["linkText=Outdoor Living", "linkText"],
+        ["css=li:nth-child(7) .no-underline", "css:finder"],
+        ["xpath=//a[contains(text(),'Outdoor Living')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/span/div/div/section/nav/ul/li[7]/section/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.walmart.ca/en/browse/outdoor-living/10009?icid=home_page_outdoor_living_outdoor_living_d_173123_I3G89BLNOR')]", "xpath:href"],
+        ["xpath=//li[7]/section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Outdoor Living')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ec70e40-263e-4949-9ae9-13a2929d7602",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Outdoor Furniture & Outdoor Living for Patios | Walmart Canada",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "27074d8b-4c51-4896-abd8-61035521b3d3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c7d2c8e3-4516-4ce6-bbf9-63b29fdee740"]
+  }],
+  "urls": ["https://www.walmart.ca/"],
+  "plugins": []
+}
